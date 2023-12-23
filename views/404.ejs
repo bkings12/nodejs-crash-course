@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
-</head>
-<body>
-    <nav>
-        <div class="site-title">
-            <a href="/">Unganisha</a>
-            <p>Networking Company</p>
-        </div>
-        <ul>
-            <li><a href="/">Blogs</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/blog/create">New Blog</a></li>
-        </ul>
-    </nav>
-
-    <h1>OOPPsi!!-404</h1>
+    <html lang="en">
+        <%- include('./partials/head.ejs') %>
+       
+    <body>
+        <%- include('./partials/nav.ejs') %>
+     <div class="not-found content">
+        <h1>OOPPsi!!-404</h1>
     <h2>page does not exist</h2>
+
+     </div>
+    
+
+    <%- include('./partials/footer.ejs') %>
     
 </body>
 </html>

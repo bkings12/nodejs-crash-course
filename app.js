@@ -7,6 +7,8 @@ app.set('view engine', 'ejs');
 //listen for requests
 app.listen(3000);
 
+app.use(express.static('public'))
+
 app.get('/', (req, res)=>{
     res.render('index', {title:'Home'});
 });
